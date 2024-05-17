@@ -1,0 +1,806 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: normal;
+    cursor: default;
+}
+
+
+/* END OF CSS RESET */
+
+
+/* VARIABLES */
+
+:root {
+    --black: rgb(36, 35, 35, 0.9);
+    --h4: rgb(221, 144, 0);
+    --blackButton: rgb(36, 35, 35);
+    --blue: rgb(53, 129, 159);
+    --white: rgba(255, 255, 255, 0.9);
+    --grey: rgba(117, 97, 97, 0.733);
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* HERO SECT */
+.hero {
+    height: 100vh;
+    background-image: url("../images/yellow-background-pencil-designer.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner h1 {
+    font-family: bold;
+    font-size: 64px;
+    color: var(--black);
+    padding-top: 250px;
+}
+
+
+#banner p {
+    font-size: 20px;
+    font-family: regular;
+    font-style: italic;
+    color: var(--black);
+}
+
+#button-one {
+    background-color: var(--blue);
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 14px;
+    font-family: bold;
+    color: var(--white);
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 20%;
+}
+
+/* END OF HERO SECT */
+
+
+/* ABOUT SECT */
+
+#about {
+    height: 55vh;
+    text-align: center;
+}
+
+#about-span {
+    color: var(--blue);
+    font-style: normal;
+}
+
+#about h3 {
+    padding-top: 150px;
+    padding-bottom: 5px;
+    font-family: regular;
+    font-size: 30px;
+    color: var(--black);
+}
+
+#about p {
+    font-family: regular;
+    color: var(--grey);
+    font-size: 17px;
+}
+
+#button-two {
+    background-color: var(--black);
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 14px;
+    font-family: bold;
+    color: var(--white);
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 20%;
+}
+
+/* END OF ABOUT SECT */
+
+/* SERVICES */
+
+#inner {
+    padding-top: 100px;
+    text-align: center;
+    background-color: var(--blue);
+    height: 60vh;
+    color: var(--white);
+}
+
+#inner1 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+#inner1 i {
+    background-color: var(--white);
+    clip-path: circle(50%);
+    width: 130px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+#inner #services-heading {
+    font-family: bold;
+    font-size: 15px;
+    color: var(--h4);
+}
+
+#inner h3 {
+    font-family: bold;
+}
+
+#inner h2 {
+    padding-top: 13px;
+    font-family: bold;
+    font-size: 30px;
+}
+
+#inner p {
+    font-family: regular;
+    width: 90%;
+    margin: 2%;
+}
+
+/* END OF SERVICES */
+
+/* NEXT-WEB */
+
+#next-web {
+    height: 100vh;
+    background-image: url("../images/scissors2.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    text-align: center;
+    color: var(--black);
+}
+
+#central-sect {
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 300px;
+
+}
+
+#central-sect h2 {
+    font-family: bold;
+    font-size: 48px;
+    width: 30%;
+    padding-left: 470px;
+}
+
+span {
+    font-style: italic;
+}
+
+#button-three {
+    background-color: var(--blue);
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 13px;
+    font-family: bold;
+    color: var(--white);
+    width: 150px;
+    border: none;
+    box-shadow: 20%;
+    cursor: pointer;
+}
+
+/* END OF NEXT WEB */
+
+/* PROJECTS */
+
+#portfolio {
+    height: 100vh;
+    text-align: center;
+    font-family: bold;
+}
+
+#portfolio h3 {
+    color: var(--h4);
+    margin-top: 50px;
+}
+
+#portfolio h1 {
+    font-size: 30px;
+    color: var(--black);
+}
+
+.portfolio-inner h2 {
+    color: var(--white);
+    padding-left: 10px 0px;
+}
+
+.portfolio-inner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: -66px;
+    justify-content: center;
+}
+
+.portfolio-inner {
+    font-size: 15px;
+    text-align: start;
+    color: var(--white);
+}
+
+.portfolio-inner .pic {
+    width: 400px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.text {
+    width: 300px;
+    position: absolute;
+    top: 104px;
+    color: var(--white);
+    padding-left: 35px;
+    opacity: 0;
+}
+
+
+.portfolio-inner .pic {
+    /* width: 500px; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.portfolio-inner .pic:hover {
+    transform: scale(.90);
+
+}
+
+.stationary:hover .text {
+    opacity: 100%;
+}
+
+.strawberry:hover .text {
+    opacity: 100%;
+}
+
+#ice-cream:hover .text {
+    opacity: 100%;
+}
+
+
+#workspace:hover .text {
+    opacity: 100%;
+}
+
+/* END OF PROJECTS */
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+    background-color: var(--blue);
+    height: 30vh;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+#contact h2 {
+
+    font-family: bold;
+    color: rgb(255, 255, 255);
+}
+
+#button-four {
+    background-color: var(--white);
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 13px;
+    font-family: bold;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    border: none;
+    box-shadow: 20%;
+    cursor: pointer;
+}
+
+#button-five {
+    background-color: var(--blackButton);
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 18px;
+    font-size: 13px;
+    font-family: bold;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    border: none;
+    box-shadow: 20%;
+    cursor: pointer;
+}
+
+
+/* END OF CONTACT */
+
+
+/* MAP SECT */
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+
+/* END OF MAP SECT */
+
+
+/* FOOTER */
+
+footer {
+    height: 30vh;
+    color: var(--black);
+    text-align: center;
+    /* padding: auto; */
+}
+
+#footer-inner {
+    width: 100%;
+    padding-top: 3rem;
+    align-self: center;
+}
+
+#footer-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    color: var(--blue);
+}
+
+
+#copyright {
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+#map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* END OF FOOTER */
+
+/* ++++++++++++++++++++++
++++++++++++++++++++++++++
+++++++++++++++++++++++++++
++++++++MEDIA QUIRIES++++++
++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++ */
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+    /* Hero section */
+    .hero {
+        height: 50vh;
+        background-size: contain;
+    }
+
+    .hero #banner h1 {
+        font-size: 25px;
+        padding-top: 100px;
+    }
+
+    .hero #banner p {
+        font-size: 12px;
+    }
+
+    #button-one {
+        padding: 15px;
+    }
+
+    /* END OF HERO */
+
+
+    /* About section */
+    #about {
+        height: 35vh;
+        text-align: center;
+    }
+
+    #about h3 {
+        padding-top: 18px;
+        padding-bottom: 0px;
+        font-size: 15px;
+
+    }
+
+    #about p {
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    #button-two {
+        padding: 15px;
+    }
+
+
+    /* End of about */
+
+    /* Services section */
+    #inner {
+        padding-top: 50px;
+        height: 145vh;
+        text-align: center;
+    }
+
+    #inner1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+
+    }
+
+    #inner1 i {
+        clip-path: circle(40%);
+        width: 80px;
+        height: 90px;
+        padding-top: 30px;
+    }
+
+    /* section */
+
+    #inner h3 {
+        font-family: bold;
+        font-size: 20px;
+    }
+
+    #inner h2 {
+        padding-top: 13px;
+        font-family: bold;
+        font-size: 20px;
+    }
+
+    #inner p {
+        font-family: regular;
+        width: 90%;
+        margin: 2%;
+        font-size: 15px;
+    }
+
+    /* end of service */
+
+    /* next web */
+
+
+
+    #next-web {
+        height: 50vh;
+        background-image: url("../images/scissors2.jpg");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: contain;
+        text-align: center;
+        color: var(--black);
+    }
+
+    #central-sect {
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+
+
+    #central-sect h2 {
+        font-family: bold;
+        font-size: 18px;
+        width: 50%;
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    #button-three {
+        padding: 15px;
+    }
+
+    /* end of next web */
+
+    /* projects */
+
+
+    #portfolio {
+        height: 190vh;
+        text-align: center;
+        font-family: bold;
+    }
+
+    #portfolio h3 {
+        color: var(--h4);
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #portfolio h1 {
+        font-size: 20px;
+        color: var(--black);
+    }
+
+    .portfolio-inner {
+        display: flex;
+    }
+
+    /* end of projects */
+
+    /* contact */
+
+    #contact {
+        text-align: center;
+        background-color: var(--blue);
+        height: 25vh;
+        padding-top: 50px;
+        margin-top: 100px;
+    }
+
+    #contact h2 {
+        font-size: 17px;
+        font-family: regular;
+        color: rgb(255, 255, 255);
+    }
+
+    #button-four {
+        background-color: var(--white);
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 14px;
+        font-size: 13px;
+        font-family: bold;
+        color: rgb(0, 0, 0);
+        width: 120px;
+        border: none;
+        box-shadow: 20%;
+        cursor: pointer;
+    }
+
+    #button-five {
+        background-color: var(--blackButton);
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 14px;
+        font-size: 13px;
+        font-family: bold;
+        color: var(--white);
+        width: 120px;
+        border: none;
+        box-shadow: 20%;
+        cursor: pointer;
+    }
+
+    /* end of contact */
+
+    /* map sect */
+   
+
+    #map iframe {
+        height: auto;
+        width: 100%;
+        
+    
+    } 
+
+    /* end of map */
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    /* Hero section */
+    .hero {
+        height: 80vh;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #banner h1 {
+        font-family: bold;
+        font-size: 34px;
+        color: var(--black);
+        padding-top: 150px;
+    }
+
+    #banner p {
+        font-size: 18px;
+        font-family: regular;
+        font-style: italic;
+        color: var(--black);
+    }
+
+    #button-one {
+        background-color: var(--blue);
+        border-radius: 3px;
+        margin-top: 40px;
+        padding: 18px;
+        font-size: 14px;
+        border: none;
+        width: 150px;
+    }
+
+    /* end of hero */
+
+    /* about sect */
+
+    #about {
+        height: 55vh;
+        text-align: center;
+    }
+
+    #about h3 {
+        padding-top: 80px;
+        padding-bottom: 5px;
+        font-family: regular;
+        font-size: 23px;
+        color: var(--black);
+    }
+
+    #about p {
+        font-family: regular;
+        color: var(--grey);
+        font-size: 13px;
+    }
+
+    #button-two {
+        background-color: var(--blackButton);
+        border-radius: 3px;
+        margin-top: 40px;
+        padding: 18px;
+        font-size: 14px;
+        border: none;
+        width: 150px;
+    }
+
+    /* end of about sec */
+
+
+    /* services */
+
+    #inner {
+        padding-top: 100px;
+        text-align: center;
+        background-color: var(--blue);
+        height: 60vh;
+        color: var(--white);
+        text-align: center;
+    }
+
+
+    #inner1 {
+        display: flex;
+        padding-top: 15px;
+        justify-content: space-evenly;
+    }
+
+    #inner1 i {
+        clip-path: circle(40%);
+        width: 80px;
+        height: 90px;
+        padding-top: 30px;
+    }
+
+    #inner h3 {
+        font-family: bold;
+    }
+
+    #inner h2 {
+        padding-top: 13px;
+        font-family: bold;
+        font-size: 25px;
+    }
+
+    /* END OF SERVICES */
+
+    /* NEXT-WEB */
+
+    #next-web {
+        height: 70vh;
+        background-image: url("../images/scissors2.jpg");
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        text-align: center;
+        color: var(--black);
+    }
+
+    #central-sect {
+        justify-content: center;
+        padding-left: 165px;
+        padding-top: 120px;
+    }
+
+
+    #central-sect h2 {
+        font-family: bold;
+        font-size: 18px;
+        width: 40%;
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    #button-three {
+        padding: 15px;
+    }
+
+    /* end of next web */
+
+    /* Projects */
+
+    #portfolio {
+        height: 210vh;
+        text-align: center;
+        font-family: bold;
+    }
+
+    /* end of projects */
+
+    /* contact */
+    #button-four {
+        background-color: var(--white);
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 14px;
+        font-size: 13px;
+        font-family: bold;
+        color: rgb(0, 0, 0);
+        width: 120px;
+        border: none;
+        box-shadow: 20%;
+        cursor: pointer;
+    }
+
+    #button-five {
+        background-color: var(--blackButton);
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 14px;
+        font-size: 13px;
+        font-family: bold;
+        color: var(--white);
+        width: 120px;
+        border: none;
+        box-shadow: 20%;
+        cursor: pointer;
+    }
+
+    /* end of contact */
+
+/* map */
+#map iframe {
+    height: auto;
+    width: 100%;
+    
+}
+}
+
