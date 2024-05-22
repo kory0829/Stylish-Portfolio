@@ -402,6 +402,7 @@ footer {
 +++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++ */
 
+/* iPhone 6 Portrait */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -412,7 +413,7 @@ footer {
     }
 
     .hero #banner h1 {
-        font-size: 25px;
+        font-size: 18px;
         padding-top: 100px;
     }
 
@@ -421,7 +422,8 @@ footer {
     }
 
     #button-one {
-        padding: 15px;
+        padding: 10px;
+        width: 110px;
     }
 
     /* END OF HERO */
@@ -429,24 +431,28 @@ footer {
 
     /* About section */
     #about {
-        height: 35vh;
+        height: 20vh;
         text-align: center;
     }
 
     #about h3 {
-        padding-top: 18px;
+        padding-top: 1px;
         padding-bottom: 0px;
-        font-size: 15px;
+        font-size: 14px;
 
     }
 
     #about p {
         font-size: 10px;
-        margin: 10px;
+        margin: 8px;
     }
 
     #button-two {
-        padding: 15px;
+        padding: 10px;
+        width: 120px;
+        position: relative;
+        top: -30px;
+        margin-bottom: 20px;
     }
 
 
@@ -455,7 +461,7 @@ footer {
     /* Services section */
     #inner {
         padding-top: 50px;
-        height: 145vh;
+        height: 130vh;
         text-align: center;
     }
 
@@ -534,14 +540,14 @@ footer {
 
 
     #portfolio {
-        height: 190vh;
+        height: 170vh;
         text-align: center;
         font-family: bold;
     }
 
     #portfolio h3 {
         color: var(--h4);
-        margin-top: 10px;
+        margin-top: 1px;
         font-size: 15px;
     }
 
@@ -552,6 +558,7 @@ footer {
 
     .portfolio-inner {
         display: flex;
+        margin: 0;
     }
 
     /* end of projects */
@@ -603,24 +610,23 @@ footer {
     /* end of contact */
 
     /* map sect */
-   
+
 
     #map iframe {
         height: auto;
         width: 100%;
-        
-    
-    } 
+    }
 
     /* end of map */
 
 }
 
+/* iPad mini */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
     /* Hero section */
     .hero {
-        height: 80vh;
+        height: 40vh;
         background-size: cover;
         text-align: center;
     }
@@ -654,7 +660,7 @@ footer {
     /* about sect */
 
     #about {
-        height: 55vh;
+        height: 29vh;
         text-align: center;
     }
 
@@ -688,10 +694,10 @@ footer {
     /* services */
 
     #inner {
-        padding-top: 100px;
+        padding-top: 50px;
         text-align: center;
         background-color: var(--blue);
-        height: 60vh;
+        height: 35vh;
         color: var(--white);
         text-align: center;
     }
@@ -725,7 +731,7 @@ footer {
     /* NEXT-WEB */
 
     #next-web {
-        height: 70vh;
+        height: 40vh;
         background-image: url("../images/scissors2.jpg");
         background-repeat: no-repeat;
         background-position: left top;
@@ -758,9 +764,15 @@ footer {
     /* Projects */
 
     #portfolio {
-        height: 210vh;
+        height: 115vh;
         text-align: center;
         font-family: bold;
+
+    }
+
+    .portfolio-inner {
+        display: flex;
+        margin: 0;
     }
 
     /* end of projects */
@@ -796,11 +808,10 @@ footer {
 
     /* end of contact */
 
-/* map */
-#map iframe {
-    height: auto;
-    width: 100%;
-    
-}
-}
+    /* map */
+    #map iframe {
+        height: auto;
+        width: 100%;
 
+    }
+}
