@@ -14,7 +14,7 @@
 <body>
     <!-- NAV -->
     <label>
-        <input type="checkbox">
+        <input type="checkbox" id ="nav-toggle" >
         <div class="toggle">
             <span class="top_line common"></span>
             <span class="middle_line common"></span>
@@ -24,10 +24,11 @@
         <div class="slide">
             <ul id="nav-ul">
                 <li><a href="#"><i class="" </a>Home</li>
-                <li><a href="#"><i class="" </a>About</li>
-                <li><a href="#"><i class="" </a>Services</li>
-                <li><a href="#"><i class="" </a>Portfolio</li>
-                <li><a href="#"><i class="" </a>Contact</li>
+                <li><a href="#about"><i class="" </a>About</li>
+                <li><a href="#services"><i class="" </a>Services</li>
+                <li><a href="#next-web"><i class="" </a>Next-web</li>
+                <li><a href="#portfolio"><i class="" </a>Portfolio</li>
+                <li><a href="#contact"><i class="" </a>Contact</li>
             </ul>
         </div>
     </label>
@@ -146,10 +147,6 @@
         </div>
     </section>
 
-    <!-- li:hover {
-  cursor: url(path/to/image.png), auto; 
-} -->
-
     <!-- END OF PROJECTS -->
 
     <!-- CONTACT -->
@@ -198,6 +195,15 @@
 
 
     <!-- END OF FOOTER -->
+
+    <script>
+        document.querySelectorAll('#nav-ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+      </script>
+      
 </body>
 
 </html>
